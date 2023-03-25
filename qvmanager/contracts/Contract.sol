@@ -27,7 +27,8 @@ contract QuadVote {
         uint256 status; //1. upcomming , 2. ongoing , 3. ended 
         uint256 deadline;
         uint256 startdate;
-        mapping(address => string) participants; // user to participants mapping
+        uint256 no_of_participants;
+        mapping(address => string) participants; // user to participants mapping from addr to participate id
 
         //data about the votes
         mapping(address => Attestation) total_votes;// map of address and all his votes 
@@ -43,6 +44,7 @@ contract QuadVote {
     }
         // Code to create a Voting Event 
     function createVoting_Event(
+        address _owner,
         string memory _title,
         string memory _description,
         string memory _image,
@@ -68,6 +70,7 @@ contract QuadVote {
         }
         require(flag==1,"Given eventID already Exists");
         require(flag==2,"Given title already Exists");
+        voting_event.owner=_owner;
         voting_event.event_id = _event_id;
         voting_event.title = _title;
         voting_event.description = _description;
@@ -78,8 +81,25 @@ contract QuadVote {
         voting_event.max_votes=_max_votes;
         voting_event.status= 1; // default set to upcomming
 
-        numberOfVoting_Events;
+        numberOfVoting_Events++;
         return voting_event.event_id;
     }
-    
+    function add_participant(// particpant refers to the candidate or the project that is up for voting, we only store participant id in the smart contract
+        string memory _event_id,
+        string _participant_id,
+        address _participant_address
+        string[] _denied_voting_access,
+    )
+    public returns(string memory){
+        for(uint i = 0; i < numberOfVoting_Events; i++) {
+            if(compareStrings(voting_events[1].event_id,_event_id)){
+                //when the required event is found
+                participants[_participant_address]=participant_id
+                denied_access[_participant_address]=_denied_voting_access
+                no_of_participants++;
+
+            }
+        }
+        return "done";
+    }
 }
