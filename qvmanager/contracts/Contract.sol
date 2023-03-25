@@ -6,7 +6,15 @@ contract QuadVote {
     struct Attestation{
         string attestation_id;
         address attestor;
+        string event_id,
         mapping(string => uint256) votes; // participant_id -> number of votes
+
+            
+        constructor(string memory _attestation_id, address _attestor, string memory _event_id) {
+            attestation_id = _attestation_id;
+            attestor = _attestor;
+            event_id = _event_id;
+        }
     }
 
     struct Voting_Event {
@@ -42,7 +50,7 @@ contract QuadVote {
     function compareStrings(string memory a, string memory b) public pure returns (bool) {
         return keccak256(abi.encodePacked(a)) == keccak256(abi.encodePacked(b));
     }
-        // Code to create a Voting Event 
+    // function to create a Voting Event 
     function createVoting_Event(
         address _owner,
         string memory _title,
@@ -84,6 +92,8 @@ contract QuadVote {
         numberOfVoting_Events++;
         return voting_event.event_id;
     }
+
+    //function to add participants
     function add_participant(// particpant refers to the candidate or the project that is up for voting, we only store participant id in the smart contract
         string memory _event_id,
         string _participant_id,
@@ -97,9 +107,26 @@ contract QuadVote {
                 participants[_participant_address]=participant_id
                 denied_access[_participant_address]=_denied_voting_access
                 no_of_participants++;
-
             }
         }
         return "done";
     }
+
+    //function to add votes of a participant
+    function add_attestation(
+        string attestation_id,
+        string event_id,
+        address attestor,
+        string[] participant_voted,
+        uint256[] no_votes_votes_to_participant
+    )
+    public return (string memory){
+        Attestation memory newAttestation = Attestation(attestation_id, attestor,event_id);
+        for(uint i=0;i<participant_voted.length;i++){
+            voting_events[event_id].total_votes[attestor]=newAttestation;
+        }
+    return("done");
+    }
+
+    //function to get event 
 }
