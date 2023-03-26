@@ -1,0 +1,317 @@
+.jqcOqq {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 10rem;
+}
+
+.gsGZgl {
+  /* padding-bottom: 24px;
+  pad: 40px; */
+  box-sizing: border-box;
+  position: relative;
+  padding: 24px 40px;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px 0px;
+}
+
+.fRfwkk {
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.OtLie {
+  width: 100%;
+}
+
+.gZaRMg {
+  display: flex;
+  flex-direction: column;
+}
+
+.kVeYmi {
+  position: relative;
+  width: 100%;
+}
+
+.dCbuVU {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.dXUwTH {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+.dCbuVU svg {
+  height: 24px;
+  width: 24px;
+  color: rgb(180, 190, 192);
+}
+
+.bUTEtI {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.eZnkZD {
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: none;
+  padding: 14px 16px 14px 48px;
+  width: 100%;
+  box-shadow: rgb(208, 217, 218) 0px 0px 0px 2px;
+  background-color: rgb(240, 245, 245);
+  color: rgb(92, 104, 109);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  outline: none;
+  transition: all 0.16s ease-in 0s;
+}
+
+.votingFlexBox {
+  display: flex;
+  margin: 2rem 10rem;
+}
+.votingFlexBoxLeft {
+  /* height:800px; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  flex: 30%;
+  align-self: flex-start;
+}
+
+.leftFlexCard {
+  /* padding: 32px; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: rgba(3, 0, 92, 0.12) 0px 1px 3px,
+    rgba(3, 0, 92, 0.07) 0px 4px 11px;
+  /* width: 100%; */
+  position: sticky;
+  top: 16px;
+}
+
+.leftFlexCardDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.votingFlexBoxLeft h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: -0.75rem;
+}
+
+.votingFlexBoxLeft p {
+  font-size: 16px;
+  color: gray;
+}
+
+.votingFlexBoxLeft span {
+  color: #000;
+  font-weight: 600;
+}
+
+.leftBoxUpperBorder {
+  padding-left: 2.5rem;
+  padding-bottom: 18px;
+  border-bottom: black solid 1px;
+}
+
+.leftBoxLowerBorder {
+  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.leftBoxLowerBorderP1 {
+  padding-bottom: 5rem;
+}
+
+.leftFlexButton {
+  width: 70%;
+  height: 50px;
+  padding: 0px 39px;
+  border: 1px solid rgb(35, 104, 251);
+  border-radius: 8px;
+  margin: 0px;
+  box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
+  background-color: rgb(55, 112, 255);
+  color: rgb(255, 255, 255);
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.votingFlexBoxRight {
+  /* background-color: rgb(186, 184, 184); */
+  flex: 70%;
+  margin-left: 1rem;
+  background-color: #f5f7f7;
+}
+
+.ecXsRj {
+  --paddingY: 24px;
+  --paddingX: 40px;
+  box-sizing: border-box;
+  position: relative;
+  padding: var(--paddingY) var(--paddingX);
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
+}
+
+.eachVotingBox {
+  margin: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.eachVotingBoxUpper {
+  display: flex;
+  flex-direction: row;
+}
+
+.eachVotingBoxUpperLeft {
+  flex: 70%;
+}
+
+.eachVotingBoxUpperRight {
+  flex: 30%;
+}
+
+.eachVotingBoxUpperLeftMini {
+  display: flex;
+  flex-direction: row;
+}
+
+.eachVotingBoxUpperLeftMiniLeft {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.eachVotingBoxUpperLeftMiniRight h5 {
+  font-size: 20px;
+  padding-left: 1.5rem;
+}
+
+.eachVotingBoxUpperLeftMiniRight p {
+  font-size: 1rem;
+  margin-top: -24px;
+  padding-left: 1.5rem;
+  color: gray;
+}
+
+.eachVotingBoxUpperRight button {
+  /* width: 70%; */
+  height: 40px;
+  padding: 0px 20px;
+  border: 1px solid rgb(35, 104, 251);
+  border-radius: 8px;
+  margin: 32px 0 0 100px;
+  box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
+  background-color: rgb(55, 112, 255);
+  color: rgb(255, 255, 255);
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.eachVotingBoxLower {
+  margin-top: 2rem;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.eachVotingBoxLowerIcons {
+  display: flex;
+  -webkit-box-align: unset;
+  align-items: unset;
+  flex-basis: 380px;
+  flex-direction: row;
+  gap: 8px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+.eachVotingBoxLowerIconsOutline {
+  max-height: 48px;
+  padding: 10px 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(245, 247, 247);
+  border-radius: 16px;
+  background-color: rgb(245, 247, 247);
+}
+
+.eachVotingBoxLowerIconsRightFlex {
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.svgClass {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.svgClass svg {
+  height: 24px;
+  width: 24px;
+  color: rgb(56, 71, 78);
+}
+
+.overview {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: rgb(56, 71, 78);
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.leftBoxLowerBorderP1Sub {
+  display: flex;
+}
+
+.leftBoxLowerBorderP1SubLeft {
+  /* background-color: red; */
+  flex: 50%;
+}
+.leftBoxLowerBorderP1SubRight {
+  /* background-color: blue; */
+  flex: 50%;
+}

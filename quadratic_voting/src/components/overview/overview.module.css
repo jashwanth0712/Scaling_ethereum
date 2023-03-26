@@ -1,0 +1,158 @@
+.flexbox {
+  margin: 2rem 10rem;
+  display: flex;
+  /* height: 200px; */
+  /* overflow: auto; */
+}
+.leftFlex {
+  /* background-color: blue; */
+  /* height:800px; */
+  flex: 65%;
+}
+
+.leftFlex img {
+  height: 450px;
+  width: 770px;
+}
+
+.leftFlex p {
+  font-size: 20px;
+}
+
+.rightFlex {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  /* background-color: rgb(186, 184, 184); */
+  flex: 35%;
+  margin-left: 1rem;
+}
+
+.rightFlexCard {
+  padding: 32px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: rgba(3, 0, 92, 0.12) 0px 1px 3px,
+    rgba(3, 0, 92, 0.07) 0px 4px 11px;
+  width: 100%;
+  position: sticky;
+  top: 16px;
+}
+
+.rightFlexCardDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightFlexCardDisplay1 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+}
+
+.rightFlexUpperMargin {
+  margin-bottom: 32px;
+}
+
+.rightFlexCardPostion {
+  position: relative;
+  margin: 0px;
+  padding: 8px 0px 8px 16px;
+  list-style-type: none;
+}
+
+.rightFlexCardPostion::before {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  border-radius: 1.5px;
+  background-color: rgb(55, 112, 255);
+}
+
+.rightFlexGreyHeadings {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: rgb(180, 190, 192);
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.rightFlexDarkHeadings {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 800;
+  color: rgb(39, 51, 57);
+  /* font-family: "Nunito Sans", sans-serif; */
+  margin: 4px 0px 0px;
+}
+
+.rightFlexGreyHeadingsMargin + .rightFlexGreyHeadingsMargin {
+  margin-top: 16px;
+}
+
+.rightFlexBottomBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rightFlexGreyBox {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgb(245, 247, 247);
+}
+
+.rightFlexGreyBoxHeading {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: rgb(142, 152, 156);
+  /* font-family: Montserrat, sans-serif; */
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.rightFlexGreyBoxSubHeading {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 800;
+  color: rgb(39, 51, 57);
+  /* font-family: "Nunito Sans", sans-serif; */
+  margin: 0px;
+}
+
+.rightFlexButton {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  padding: 0px 39px;
+  border: 1px solid rgb(35, 104, 251);
+  border-radius: 8px;
+  margin: 0px;
+  box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
+  background-color: rgb(55, 112, 255);
+  color: rgb(255, 255, 255);
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}

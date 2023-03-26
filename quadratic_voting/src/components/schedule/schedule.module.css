@@ -1,0 +1,134 @@
+.container_grid_margin {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.container_grid {
+  display: grid;
+  width: 100%;
+  column-gap: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.container_flexbox_border {
+  padding: 32px;
+  background-color: rgb(228, 234, 235);
+  border-radius: 16px;
+}
+
+.container_flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hackathonHeading {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: rgb(92, 104, 109);
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.OtLie {
+  width: 100%;
+}
+
+.hackathonBoxes {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.hackathonBorderBox {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.hackathonIndividualBox {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+.registrationBox {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.registrationTitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 800;
+  color: rgb(39, 51, 57);
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: anywhere;
+  overflow: hidden;
+}
+
+.registrationBoxRight {
+  display: flex;
+  -webkit-box-align: unset;
+  align-items: unset;
+  flex-basis: 380px;
+  flex-direction: row;
+  gap: 8px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+.registrationBoxRightFlexOutline {
+  max-height: 48px;
+  padding: 10px 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(245, 247, 247);
+  border-radius: 16px;
+  background-color: rgb(245, 247, 247);
+}
+
+.registrationBoxRightFlex {
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.svgClass {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.svgClass svg {
+  height: 24px;
+  width: 24px;
+  color: rgb(56, 71, 78);
+}
+
+.dateTime {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: rgb(56, 71, 78);
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  text-transform: uppercase;
+}
